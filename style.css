@@ -1,0 +1,46 @@
+
+
+body {
+    margin: 0;
+    border: solid red 2px;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 1.5px;
+    gap: 1.5px;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20% 60% 20%;
+
+    grid-template-areas: 
+        "cabecalho cabecalho"
+        "aolado principal"
+        "rodape rodape"
+    ;
+}
+
+body > * {
+    border: solid blue 2px;
+}
+
+main {
+    grid-area: principal;
+}
+
+header {
+    grid-area: cabecalho;
+    /* grid-column-start: 1; */
+    /* grid-column-end: 3; */
+}
+
+aside {
+    grid-area: aolado;
+    /* grid-row-start: 2; */
+    /* grid-row-end: 4; */
+}
+
+footer {
+    grid-area: rodape;
+    /* grid-column-start: 2; */
+    /* grid-column-end: 3; */
+}
