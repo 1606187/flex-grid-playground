@@ -25,6 +25,14 @@ body > * {
 
 main {
     grid-area: principal;
+    border: solid red 3px;
+    background-color: red;
+    padding: 5px;
+
+    display: flex;
+    gap: 5px;
+
+    flex-direction: column;
 }
 
 header {
@@ -43,4 +51,20 @@ footer {
     grid-area: rodape;
     /* grid-column-start: 2; */
     /* grid-column-end: 3; */
+}
+
+.azul {
+    background-color: blue;
+    padding: 5px;
+
+    flex-grow: 1;
+
+    display: flex;
+    gap: 5px;
+}
+
+article {
+    background-color: green;
+
+    flex-grow: 1;
 }
